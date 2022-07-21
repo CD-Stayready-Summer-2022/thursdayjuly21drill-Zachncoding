@@ -16,6 +16,12 @@ public class Problem01 {
      * @return
      */
     public boolean lastDigit(int a, int b) {
-        return false;
+        String stringA = Integer.toString(a);
+        String stringB = Integer.toString(b);
+
+        if (stringA.charAt(stringA.length() - 1) == stringB.charAt(stringB.length() - 1))
+        return true;
+        else
+            return false;
     }
 }
